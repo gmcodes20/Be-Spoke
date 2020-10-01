@@ -3,59 +3,174 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <title>Bootstrap Practice</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/costum.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="login-container">
-        <div class="avtar"></div>
-        <div class="title">Login Form</div>
-        <div class="sub-title">Enter your Login Details</div>
-        <div class="fields">
-          <div class="Username">
-            <i class="fas fa-user"></i>
-            <input type="username" class="user-input" placeholder="Username" />
-          </div>
-          <div class="password">
-            <i class="fas fa-lock"></i>
-            <input type="password" class="pass-input" placeholder="Password" />
-          </div>
-        </div>
-        <button class="login">Login</button>
-        <div class="link">
-          <a href="#">Forgot Password? </a> OR <a href="#">Sign Up</a>
-        </div>
-      </div>
+    <!-- Start Navigation -->
+    <nav
+      class="nav fixed-top navbar-expand-lg navbar-dark bg-secondary fixed-top"
+    >
+      <!-- Start container -->
+      <div class="container bg-secondary">
+        <!-- Navbar brand -->
+        <a href="index.html" class="navbar-brand">BS</a>
 
-      <div class="row">
-        <div class="col">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod deleniti
-          porro optio neque qui sint amet, officiis nostrum debitis illum maxime
-          provident a assumenda at pariatur rem, cum perferendis blanditiis
-          libero fuga quibusdam? Quae, quia voluptate tenetur impedit
-          perspiciatis sequi saepe temporibus. Aliquid, provident officiis eos
-          et rerum saepe possimus.
+        <!-- Start Button -->
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarresponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- End button -->
+
+        <!-- start links -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <!-- Home -->
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <!-- Services -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">Services</a>
+            </li>
+
+            <!-- login -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">Login</a>
+            </li>
+
+            <!-- Services -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">Services</a>
+            </li>
+
+            <!-- About us -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
         </div>
-        <div class="col">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod deleniti
-          porro optio neque qui sint amet, officiis nostrum debitis illum maxime
-          provident a assumenda at pariatur rem, cum perferendis blanditiis
-          libero fuga quibusdam? Quae, quia voluptate tenetur impedit
-          perspiciatis sequi saepe temporibus. Aliquid, provident officiis eos
-          et rerum saepe possimus.
-        </div>
-        <div class="col">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod deleniti
-          porro optio neque qui sint amet, officiis nostrum debitis illum maxime
-          provident a assumenda at pariatur rem, cum perferendis blanditiis
-          libero fuga quibusdam? Quae, quia voluptate tenetur impedit
-          perspiciatis sequi saepe temporibus. Aliquid, provident officiis eos
-          et rerum saepe possimus.
-        </div>
+        <!-- end links -->
       </div>
-    </div>
+      <!-- End container -->
+    </nav>
+    <!-- End Navigation -->
+
+    <header>
+      <!-- Start Carousel -->
+      <div
+        id="carouselExampleIndicator"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            class="active"
+            data-target="#carouselExampleIndicator"
+            data-slide-to="0"
+          ></li>
+          <li data-target="#carouselExampleIndicator" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicator" data-slide-to="2"></li>
+        </ol>
+
+        <!-- start carousel inner -->
+        <div class="carousel-inner" role="listbox"></div>
+
+        <!-- Start First Slide -->
+        <div
+          class="carousel-item active"
+          style="background-image: url(http://placehold.it/1900x1080)"
+        >
+          <div class="carousel-caption d-none d-md-block">
+            <h3>First Slide</h3>
+            <p>The Description of the first Slide</p>
+          </div>
+        </div>
+        <!-- End First Slide -->
+
+        <!-- Start Second Slide -->
+        <div
+          class="carousel-item"
+          style="background-image: url(http://placehold.it/1900x1080)"
+        >
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Second Slide</h3>
+            <p>The Description of the Second Slide</p>
+          </div>
+        </div>
+        <!-- End Second Slide -->
+
+        <!-- Start Third Slide -->
+        <div
+          class="carousel-item"
+          style="background-image: url(http://placehold.it/1900x1080)"
+        >
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Third Slide</h3>
+            <p>The Description of the Third Slide</p>
+          </div>
+        </div>
+        <!-- End Third Slide -->
+      </div>
+      <!-- End Carousel Inner -->
+
+      <!-- Start Previous -->
+      <a
+        href="#carouselExampleIndicator"
+        class="carousel-control-prev"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <!-- End Previous -->
+
+      <!-- Start Next -->
+      <a
+        href="#carouselExampleIndicator"
+        class="carousel-control-next"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"> </span>
+        <span class="sr-only">next</span>
+      </a>
+      <!-- End Next -->
+
+      <!-- End Carousel -->
+    </header>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,6 +1,5 @@
 body {
   padding-top: 54px;
-  background: #101010;
 }
 
 @media (min-width: 992px) {
@@ -21,8 +20,4 @@ body {
 
 .portfolio-item {
   margin-bottom: 30px;
-}
-
-.container {
-  background: red;
 }
